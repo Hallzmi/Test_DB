@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cent" id="cent">
+        <div id="questions">
+        <h2 id = "title"></h2>
+        <p id  = "question"></p>
+        <p><input type="radio" name="an" id="y1"><span  id = "a1"></span></p>
+        <p><input type="radio" name="an" id="y2"><span  id = "a2"></span></p>
+        <p><input type="radio" name="an" id="y3"><span  id = "a3"></span></p>
+        <p><input type="radio" name="an" id="y4"><span  id = "a4"></span></p>
+
+        <button id = "get_answer">Відповісти</button>
+        <div class="right_div hidden" id = "right_div">
+            <p class="right" id="right">Правильна відповідь</p>
+            <button id = "next_question">Наступне питання</button>
+        </div>
+
+        <div class="wrong_div hidden" id="wrong_div">
+            <p class="wrong" id="wrong">Неправильна відповідь</p>
+            <button id = "view_answer">Подивитися відповідь</button>
+        </div>
+
+        <p id="answer" class = "hidden"></p>
+
+        <div id="total_div">
+            <p>Номер питання: <span id="n"></span></p>
+            <p>Кількість правильних відповідей: <span id="n_right"></span></p>
+        </div>
+    </div>
+   
+    
+    <input type="hidden" value = "0" id = "n_question">
+    <script src="js.js"></script>
+</body>
+</html>
